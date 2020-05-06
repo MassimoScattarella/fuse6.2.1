@@ -11,7 +11,7 @@ RUN wget https://www-us.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-mave
 ADD https://repository.jboss.org/nexus/content/groups/ea/org/jboss/fuse/jboss-fuse-full/6.2.1.redhat-159-04/jboss-fuse-full-6.2.1.redhat-159-04.zip /tmp
 RUN unzip /tmp/jboss-fuse-full-6.2.1.redhat-159-04.zip -d /opt
 
-ENV JAVA_HOME=/usr/lib/jvm/jre-openjdk
+ENV JAVA_HOME=/usr/lib/jvm/java-openjdk
 ENV M2_HOME=/opt/apache-maven-3.6.3
 ENV MAVEN_HOME=/opt/apache-maven-3.6.3
 ENV FUSE=/opt/jboss-fuse-6.2.1.redhat-159-04
